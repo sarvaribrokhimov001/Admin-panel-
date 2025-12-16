@@ -1,3 +1,19 @@
+"use strict";
+
+Toastify({
+    text: `Username: kevinryan
+    Password: kev02937@`,
+    duration: 7000,
+    gravity: "top",
+    position: "center",
+    close: true,
+    style: {
+      background: "linear-gradient(to right, black, black)",
+      fontFamily: "Poppins, sans-serif"
+    }
+  }).showToast();
+
+
 const form = document.querySelector(".login__form");
 const api = `https://fakestoreapi.com/auth/login`;
 
@@ -23,11 +39,9 @@ const handleSubmit = (e)=> {
 
         if(token) {
             localStorage.setItem("token" , token);
-            alert("successfully validation");
-
+            alert("Successfully Validation 🥳🥳🥳");
             window.location.href = "../pages/dashboard.html";
         }
       });
-     console.log(username , password);
 };
   form.addEventListener("submit" , handleSubmit);

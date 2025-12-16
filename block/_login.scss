@@ -4,6 +4,7 @@
     margin: auto;
     border-radius: 10px;
     background-color: black;
+    font-family: 'Poppins';
 
     &__form {
         display: flex;
@@ -20,13 +21,24 @@
         margin: 0;
     }
 
+    &__icon__and__input {
+        display: flex;
+        position: relative;
+    }
+
+    &__icon {
+        margin-top: 7px;
+        position: absolute;
+        left: 35px;
+    }
+
     &__username {
         width: 240px;
         height: 30px;
         border-radius: 12px;
         border: none;
         margin: 0px 18px;
-        padding-left: 20px;
+        padding-left: 50px;
     }
 
     &__password {
@@ -35,7 +47,7 @@
         border-radius: 12px;
         border: none;
         margin: 0px 18px; 
-        padding-left: 20px;
+        padding-left: 50px;
     }
 
     &__btn {
@@ -44,7 +56,7 @@
         margin: auto;
         border-radius: 10px;
         border: none;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     &__btn:hover {
@@ -57,5 +69,10 @@
         background-color: black;
         color: cyan;
         border: 3px solid cyan;
+    }
+
+    &__body {
+        background-color: cyan;
+        margin: 100px auto;
     }
 }

@@ -1,3 +1,5 @@
+"use strict";
+  
   function showToast(message, color = "red", duration = 2000) {
     Toastify({
       text: message,
@@ -46,14 +48,6 @@
     const username = elForm["username"].value.trim();
     const password = elForm["password"].value.trim();
     const email = elForm["email"].value.trim();
-
-    // if (!emailRegex.test(email)) {
-    //   return showToast("Invalid email address");
-    // }
-
-    // if (!passwordRegex.test(password)) {
-    //   return showToast("Invalid password");
-    // }
 
     if (username === "") {
       return showToast("Bo'sh maydonni to'ldiring !");
